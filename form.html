@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Lt. Shubham Mehta, 09109A">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>SDRS Form</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/checkout/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="styles/bootstrap.css" rel="stylesheet">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="styles/form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <div class="container">
+  <div class="py-5 text-center">
+    <a href="index.html"><img class="d-block mx-auto mb-4" src="images/logo.png" alt="" width="90" height="160"></a>
+    <h2>New Defect Entry Screen</h2>
+    <p class="lead">Register New Defects</p>
+  </div>
+
+  <!-- <div class="row">
+    <div class="col-md-4 order-md-2 mb-4">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted">Your cart</span>
+        <span class="badge badge-secondary badge-pill">3</span>
+      </h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Product name</h6>
+            <small class="text-muted">Brief description</small>
+          </div>
+          <span class="text-muted">$12</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Second product</h6>
+            <small class="text-muted">Brief description</small>
+          </div>
+          <span class="text-muted">$8</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Third item</h6>
+            <small class="text-muted">Brief description</small>
+          </div>
+          <span class="text-muted">$5</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-light">
+          <div class="text-success">
+            <h6 class="my-0">Promo code</h6>
+            <small>EXAMPLECODE</small>
+          </div>
+          <span class="text-success">-$5</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          <span>Total (USD)</span>
+          <strong>$20</strong>
+        </li>
+      </ul>
+
+      <form class="card p-2">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Promo code">
+          <div class="input-group-append">
+            <button type="submit" class="btn btn-secondary">Redeem</button>
+          </div>
+        </div>
+      </form>
+    </div> -->
+    <div class="col-md-12 order-md-1">
+      <h4 class="mb-3">Defect Details</h4>
+      <form class="needs-validation" novalidate="">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="shipName">Ship Name</label>
+            <select class="custom-select d-block w-100" id="shipName" required="">
+              <option value="" selected="selected">Choose...</option>
+              <option>Godavari</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid ship.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="dlType">DL Type</label>
+            <select class="custom-select d-block w-100" id="dlType" required="">
+              <option value="" selected="selected">Choose...</option>
+              <option>ONE</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid DL Type.
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label for="defectNo">Defect No.</label>
+            <input type="text" class="form-control" id="defectNo" placeholder="0108" required="">
+            <div class="invalid-feedback">
+              Valid defect number is required.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="defGroup">Def Group</label>
+            <select class="custom-select d-block w-100" id="defGroup" required="">
+              <option value="" selected="selected">Choose...</option>
+              <option>E-Engineering</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid Def Group.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="refitType">Refit Type</label>
+            <select class="custom-select d-block w-100" id="refitType" required="">
+              <option value="" selected="selected">Choose...</option>
+              <option>SR</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid refit type.
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="equipmentCode">Equipment Code</label>
+            <input type="text" class="form-control" id="equipmentCode" placeholder="35046" required="">
+            <div class="invalid-feedback">
+              Valid equipment code is required.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="defectNo">Equipment Name</label>
+            <input type="text" class="form-control" id="defectNo" placeholder="HP Air System" required="">
+            <div class="invalid-feedback">
+              Valid equipment name is required.
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="systemName">System Name</label>
+            <input type="text" class="form-control" id="systemName" placeholder="Auxiliaries (Main PR)" required="">
+            <div class="invalid-feedback">
+              Valid system name is required.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="eqptLocation">Eqpt Location</label>
+            <input type="text" class="form-control" id="systemName" placeholder="Scattered" required="">
+            <div class="invalid-feedback">
+              Valid eqpt location is required.
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="dartNo">DART Num</label>
+            <input type="text" class="form-control" id="dartNo" placeholder="E-234" required="">
+            <div class="invalid-feedback">
+              Valid DART num is required.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="defectNo">Maintop Number</label>
+            <input type="text" class="form-control" id="defectNo" placeholder="" required="">
+            <div class="invalid-feedback">
+              Valid maintop number is required.
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <label for="defectNo">Defect Description</label>
+            <input type="text" class="form-control" id="defectNo" placeholder="" required="" style="height:10rem;">
+            <div class="invalid-feedback">
+              Valid defect description is required.
+            </div>
+          </div>
+        </div>
+        
+        <div class="row" style="margin-bottom: 2rem;">
+          <div class="col-md-6 mb-3">
+            <label for="shipRemark">Ship Remark</label>
+            <input type="text" class="form-control" id="shipRemark" placeholder="" required="">
+            <div class="invalid-feedback">
+              Valid ship remark is required.
+            </div>
+          </div>
+        </div>
+        
+        <!-- <button class="btn btn-primary btn-lg btn-block" type="submit">Register New Defect</button> -->
+
+
+        <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+        <button class="btn btn-primary btn-lg btn-block" type="submit" data-toggle="modal" data-target="#defectRegistered">Register New Defect</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="defectRegistered" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                <h4 class="modal-title">Defect Registered Successfully!</h4>
+              </div>
+              <!-- <div class="modal-body">
+                 <p>Some text in the modal.</p>
+              </div> -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+
+
+
+
+      </form>
+    </div>
+  </div>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">© Lt. Shubham Mehta<br>Computer Application Centre, CMET, INS Shivaji</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+<script src="scripts/jquery-3.js"></script>
+      <script>window.jQuery || document.write('<script src="scripts/jquery-slim.min.js"><\/script>')</script><script src="scripts/bootstrap.js"></script>
+        <script src="scripts/form-validation.js"></script>
+
+</body></html>
